@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #000000;
+    color: #F3F3F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #EEC325;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: #F3F3F3;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #EEC325;
+    border-bottom: 3px solid #EEC325;
+}
+
+.contact {
+    text-align: center;
+    max-width: 500px; 
+    padding: 3rem; 
+    background-color: #1a1a1a;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact h1 {
+    font-size: 3rem; 
+    margin-bottom: 1.2rem; 
+    color: #EEC325;
+}
+
+.contact p {
+    font-size: 1.6rem; 
+    margin-bottom: 3rem;
+    color: #bbbbbb;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem; 
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #2a2a2a;
+    padding: 1.6rem; 
+    border-radius: 0.8rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-item i {
+    font-size: 2rem; 
+    color: #EEC325;
+    margin-right: 3rem; 
+}
+
+.contact-item a {
+    color: #F3F3F3;
+    font-size: 1.8rem; 
+    text-decoration: none;
+    flex: 1;
+    text-align: left;
+}
+
+.contact-item:hover {
+    background-color: #EEC325;
+    transform: scale(1.02);
+}
+
+.contact-item:hover i,
+.contact-item:hover a {
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1.5rem;
+    }
+
+    header {
+        padding: 1rem 3%;
+    }
+
+    .contact {
+        max-width: 320px; 
+        padding: 2rem; 
+    }
+
+    .contact h1 {
+        font-size: 2.2rem;
+    }
+
+    .contact p {
+        font-size: 1.4rem;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .contact-item i {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+        position: static;
+        transform: none;
+    }
+
+    .contact-item a {
+        margin-left: 0;
+        font-size: 1.4rem;
+    }
+}
